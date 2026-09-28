@@ -41,16 +41,16 @@ header nav ul a {
 }
 
 header nav ul a:hover {
-    color: #158339;
+    color: #348611;
 }
 
 footer {
-    background-color: #00000070;
-    list-style-type: none;
-    margin: 0;
-    padding: 20px 40px;
+    background-color: #111111;
+    border-top: 1px solid var(#222222);
+    padding: 24px 40px;
     display: flex;
-    gap: 40px;
-    justify-content: space-between;
     align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 16px;
 }
