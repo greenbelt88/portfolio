@@ -138,6 +138,27 @@ header nav ul a.active {
     margin: 0;
 }
 
+/* Home page */
+.hero {
+    padding: 100px 0 60px;
+}
+
+.hero h1 {
+    font-size: 3rem;
+    margin: 0 0 16px;
+}
+
+.hero h1 span {
+    color: var(--green-light);
+}
+
+.hero p {
+    color: var(--text-muted);
+    font-size: 1.15rem;
+    max-width: 580px;
+    margin: 0 0 30px;
+}
+
 /* Buttons */
 .buttons {
     display: flex;
@@ -257,6 +278,44 @@ header nav ul a.active {
     color: #cfe8c6;
     font-size: 0.9rem;
     padding: 4px 12px;
+}
+
+/* Training and certificates */
+.cert-stack {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.cert-card h3 {
+    margin-bottom: 4px;
+}
+
+.card .cert-meta {
+    color: var(--green-light);
+    font-size: 0.9rem;
+    margin-bottom: 14px;
+}
+
+.cert-card p + p {
+    margin-top: 12px;
+}
+
+/* Credential ID on the left, link on the right */
+.cert-footer {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    gap: 8px 20px;
+    margin-top: 18px;
+    padding-top: 14px;
+    border-top: 1px solid var(--border);
+    color: var(--text-muted);
+    font-size: 0.9rem;
+}
+
+.cert-footer a {
+    font-weight: bold;
 }
 
 /* Footer */

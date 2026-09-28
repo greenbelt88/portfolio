@@ -3,6 +3,8 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Skills, training and certificates of Kieran McKend (greenbelt88), covering web development, cybersecurity and machine learning.">
+    <meta name="theme-color" content="#000000">
     <title>greenbelt88 | Experience</title>
 
     <link rel="icon" href="../public/favicon.ico">
@@ -24,24 +26,129 @@
             </ul>
         </nav>
     </header>
+
     <main>
-        <h1>Experience</h1>
-        <h2>Skills</h2>
-        <p>Here are some of the skills I have acquired through my education and work experience:</p>
-        <ul>
-            <li>HTML, CSS, JavaScript</li>
-            <li>Python, Java</li>
-            <li>Git, Docker</li>
-        </ul>
-        <h2>Certifications</h2> <!-- Add hyperlink for each certification -->
-        <p>I have obtained the following certifications:</p>
-        <ul>
-            <li>MWR Cybersecurity certification</li>
-            <li>GCI World AI certification</li> <!-- fix certification names & add any others -->
-        </ul>
-        <h2>Work Experience</h2>
-        <p>I wish</p>
+        <section class="page-intro">
+            <h1>Experience</h1>
+            <p>The languages, tools, training and certificates I've picked up through my degree and my own time.</p>
+        </section>
+
+        <section>
+            <h2>Skills</h2>
+            <div class="card-grid">
+                <div class="card">
+                    <h3>Web</h3>
+                    <p>For building pages and interfaces, including this site.</p>
+                    <ul class="tags">
+                        <li>HTML</li>
+                        <li>CSS</li>
+                        <li>JavaScript</li>
+                    </ul>
+                </div>
+                <div class="card">
+                    <h3>Languages</h3>
+                    <p>Languages I use for coursework and my own projects.</p>
+                    <ul class="tags">
+                        <li>Python</li>
+                        <li>Java</li>
+                        <li>C++</li>
+                        <li>SQL</li>
+                    </ul>
+                </div>
+                <div class="card">
+                    <h3>Tools</h3>
+                    <p>For version control and for packaging projects so they run the same anywhere.</p>
+                    <ul class="tags">
+                        <li>Git</li>
+                        <li>Docker</li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+
+        <section>
+            <h2>Training and certificates</h2>
+            <div class="cert-stack">
+                <article class="card cert-card">
+                    <h3>MWR CyberSec Virtual Internship</h3>
+                    <p class="cert-meta">Web application security &middot; MWR CyberSec &middot; Jul 2026</p>
+                    <p>An eight-week program run by MWR CyberSec, a South African security consultancy, focused on attacking and
+                        securing web applications. I worked through authentication attacks (user enumeration, brute forcing and
+                        JWT "alg: none" forgery), cross-site scripting, CORS and DOM-based attacks, CSRF, and SQL injection,
+                        including union-based, blind, second-order and out-of-band variants. I also exploited file upload filters
+                        by bypassing MIME type, extension and magic-byte checks.</p>
+                    <p>Along the way I used standard tools for recon and exploitation (Nmap, Gobuster, Hydra, Enum4linux),
+                        privilege escalation (LinPEAS) and password cracking (John the Ripper, Hashcat), and I wrote up findings
+                        in a professional security report.</p>
+                    <div class="cert-footer">
+                        <span>Credential ID MWR-2026-138</span>
+                        <a href="https://interns.mwrcybersec.com/?hmac=4eb86a86204a05bcdded3f59e1ce8957fe048455f1d48343258da0a05e527b7b" target="_blank" rel="noopener noreferrer">Show credential</a>
+                    </div>
+                </article>
+
+                <article class="card cert-card">
+                    <h3>GCI World</h3>
+                    <p class="cert-meta">Data science and AI &middot; Matsuo-Iwasawa Lab, University of Tokyo &middot; 2026</p>
+                    <p>A free online data science programme run by the University of Tokyo's Matsuo-Iwasawa Lab, with students
+                        taking part from over 120 countries. It covered Python for data work (NumPy, pandas, Matplotlib), SQL,
+                        supervised and unsupervised learning, feature engineering and model tuning, and it included a data
+                        science competition. The certificate is awarded based on attendance, assignments and competition results.</p>
+                    <p>For my assignment, I built a customer churn model for a telecom dataset using LightGBM with Optuna
+                        hyperparameter tuning, then presented the results in an executive slide deck.</p>
+                    <div class="cert-footer">
+                        <span>Certificate of completion (PDF)</span>
+                        <a href="../assets/docs/GCI-World-Certificate.pdf" target="_blank" rel="noopener noreferrer">Show credential</a>
+                    </div>
+                </article>
+
+                <article class="card cert-card">
+                    <h3>TryHackMe: AI Security</h3>
+                    <p class="cert-meta">Learning path certificate &middot; TryHackMe &middot; Jul 2026</p>
+                    <p>A hands-on path about how AI systems are built, where they break, and how to defend them. It covers threat
+                        modelling of AI architectures, prompt injection and jailbreaking, AI supply chain risks such as tampered
+                        model files, and data poisoning attacks against retrieval-augmented generation (RAG) systems. Each topic
+                        is taught through labs against live AI applications.</p>
+                    <div class="cert-footer">
+                        <span>Credential ID THM-OQASUL4EQG</span>
+                        <a href="https://tryhackme.com/certificate/THM-OQASUL4EQG" target="_blank" rel="noopener noreferrer">Show credential</a>
+                    </div>
+                </article>
+
+                <article class="card cert-card">
+                    <h3>TryHackMe: Cyber Security 101</h3>
+                    <p class="cert-meta">Learning path certificate &middot; TryHackMe &middot; Apr 2026</p>
+                    <p>TryHackMe's broad introduction to both sides of security, building on Pre Security. It covers command-line
+                        work in Linux and Windows, networking and cryptography basics, and introductions to offensive tools and
+                        defensive security operations.</p>
+                    <div class="cert-footer">
+                        <span>Credential ID THM-FRL7M8GOOK</span>
+                        <a href="https://tryhackme.com/certificate/THM-FRL7M8GOOK" target="_blank" rel="noopener noreferrer">Show credential</a>
+                    </div>
+                </article>
+
+                <article class="card cert-card">
+                    <h3>TryHackMe: Pre Security</h3>
+                    <p class="cert-meta">Learning path certificate &middot; TryHackMe &middot; Apr 2026</p>
+                    <p>TryHackMe's foundation path, covering how networks work (the OSI model, TCP/IP, DNS and HTTP), how the web
+                        delivers pages, and the basics of the Linux and Windows operating systems. It's the groundwork that the
+                        offensive and defensive security paths build on. I'm now working through TryHackMe's penetration testing path.</p>
+                    <div class="cert-footer">
+                        <span>Credential ID THM-0PUOIQEUA4</span>
+                        <a href="https://tryhackme.com/certificate/THM-0PUOIQEUA4" target="_blank" rel="noopener noreferrer">Show credential</a>
+                    </div>
+                </article>
+            </div>
+        </section>
+
+        <section>
+            <h2>Work experience</h2>
+            <div class="card">
+                <p>I haven't held a paid tech role yet. Internships and placements will go here as I get them.
+                    Until then, my <a href="../projects/index.html">projects</a> and the training above are the best way to see what I can do.</p>
+            </div>
+        </section>
     </main>
+
     <footer>
         <div class="footer-inner">
             <p>Designed and built by Kieran McKend</p>
