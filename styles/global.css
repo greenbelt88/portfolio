@@ -58,6 +58,12 @@ p {
     max-width: 65ch;
 }
 
+/* Short muted line that sits under a section heading */
+.section-intro {
+    color: var(--text-muted);
+    margin: -8px 0 20px;
+}
+
 a {
     color: var(--green-light);
 }
@@ -112,6 +118,145 @@ header nav ul a:hover {
 header nav ul a.active {
     color: var(--text);
     border-bottom: 2px solid var(--green-light);
+}
+
+/* Page titles */
+.page-intro {
+    padding: 60px 0 10px;
+    margin-bottom: 30px;
+}
+
+.page-intro h1 {
+    font-size: 2.4rem;
+    margin: 0 0 10px;
+}
+
+.page-intro p {
+    color: var(--text-muted);
+    font-size: 1.1rem;
+    max-width: 600px;
+    margin: 0;
+}
+
+/* Buttons */
+.buttons {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 12px;
+}
+
+.button {
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+    padding: 10px 20px;
+    border: 1px solid var(--green);
+    border-radius: 6px;
+    background-color: var(--green);
+    color: #ffffff;
+    font-weight: bold;
+    text-decoration: none;
+    transition: background-color 0.2s, border-color 0.2s, color 0.2s;
+}
+
+.button:hover {
+    background-color: var(--green-dark);
+    border-color: var(--green-dark);
+}
+
+.button-outline {
+    background-color: transparent;
+    border-color: var(--border);
+    color: var(--text);
+}
+
+.button-outline:hover {
+    background-color: transparent;
+    border-color: var(--green-light);
+    color: var(--green-light);
+}
+
+.button svg {
+    width: 18px;
+    height: 18px;
+}
+
+/* Cards */
+.card-grid {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.card {
+    flex: 1 1 240px;
+    background-color: var(--surface);
+    border: 1px solid var(--border);
+    border-radius: 10px;
+    padding: 24px;
+    box-shadow: 0 4px 14px rgba(0, 0, 0, 0.3);
+}
+
+.card h3 {
+    font-size: 1.1rem;
+    margin: 0 0 10px;
+}
+
+.card p {
+    color: var(--text-muted);
+    margin: 0;
+}
+
+/* Space between a card's description and its tags */
+.card p + .tags {
+    margin-top: 14px;
+}
+
+.card ul {
+    margin: 0;
+    padding-left: 20px;
+}
+
+.card li::marker {
+    color: var(--green-light);
+}
+
+/* Cards on the home page that link to other pages */
+.link-card {
+    color: var(--text);
+    text-decoration: none;
+    transition: border-color 0.2s;
+}
+
+.link-card:hover {
+    border-color: var(--green-light);
+}
+
+.link-card h3 {
+    color: var(--green-light);
+}
+
+/* Small rounded labels for skills, interests and tech used */
+.tags {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 8px;
+}
+
+.card .tags {
+    padding: 0;
+}
+
+.tags li {
+    background-color: #223020;
+    border: 1px solid #34472f;
+    border-radius: 20px;
+    color: #cfe8c6;
+    font-size: 0.9rem;
+    padding: 4px 12px;
 }
 
 /* Footer */
