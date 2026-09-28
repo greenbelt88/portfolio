@@ -1,3 +1,14 @@
+:root {
+    --background: #111411;
+    --surface: #1a1e1a;
+    --border: #2c342c;
+    --text: #eef1ee;
+    --text-muted: #a9b2a9;
+    --green: #348611;
+    --green-dark: #2a6c0e;
+    --green-light: #6cc644;
+}
+
 /* Prevents content-box from being default */
 *, *::before, *::after {
     box-sizing: border-box;
@@ -5,8 +16,12 @@
 
 body {
     font-family: Arial, sans-serif;
-    background-color: #000000a1;
-    color: #ffffff;
+    background-color: var(--background);
+    /* Soft green glow at the top of every page */
+    background-image: linear-gradient(to bottom, #1c2a18, var(--background) 500px);
+    background-repeat: no-repeat;
+    color: var(--text);
+    line-height: 1.6;
     margin: 0;
     min-height: 100vh;
     display: flex;
@@ -15,15 +30,42 @@ body {
 
 main {
     flex: 1;
+    width: 100%;
     max-width: 900px;
     margin: 0 auto;
-    padding: 0 40px;
+    padding: 0 40px 60px;
+}
+
+h1,
+h2,
+h3 {
+    line-height: 1.2;
+}
+
+h1 {
+    letter-spacing: -0.5px;
+}
+
+h2 {
+    font-size: 1.4rem;
+    margin: 56px 0 20px;
+    padding-left: 12px;
+    border-left: 4px solid var(--green);
+}
+
+/* Keep paragraphs to a comfortable reading width */
+p {
+    max-width: 65ch;
+}
+
+a {
+    color: var(--green-light);
 }
 
 /* Header and navigation */
 header {
     background-color: #000000;
-    border-bottom: 1px solid #2c342c;
+    border-bottom: 1px solid var(--border);
     padding: 18px 0;
 }
 
@@ -37,7 +79,7 @@ header nav {
 }
 
 .logo {
-    color: #ffffff;
+    color: var(--text);
     font-size: 1.2rem;
     font-weight: bold;
     letter-spacing: 0.5px;
@@ -46,7 +88,7 @@ header nav {
 }
 
 .logo:hover {
-    color: #6cc644;
+    color: var(--green-light);
 }
 
 header nav ul {
@@ -58,25 +100,25 @@ header nav ul {
 }
 
 header nav ul a {
-    color: #a9b2a9;
+    color: var(--text-muted);
     text-decoration: none;
     padding-bottom: 4px;
 }
 
 header nav ul a:hover {
-    color: #ffffff;
+    color: var(--text);
 }
 
 header nav ul a.active {
-    color: #ffffff;
-    border-bottom: 2px solid #6cc644;
+    color: var(--text);
+    border-bottom: 2px solid var(--green-light);
 }
 
 /* Footer */
 footer {
     background-color: #000000;
-    border-top: 1px solid #2c342c;
-    color: #a9b2a9;
+    border-top: 1px solid var(--border);
+    color: var(--text-muted);
     font-size: 0.85rem;
 }
 
@@ -107,7 +149,7 @@ footer p {
 
 .footer-links a {
     display: block;
-    color: #a9b2a9;
+    color: var(--text-muted);
 }
 
 .footer-links svg {
@@ -117,5 +159,5 @@ footer p {
 }
 
 .footer-links a:hover {
-    color: #6cc644;
+    color: var(--green-light);
 }
