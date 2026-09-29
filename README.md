@@ -24,10 +24,10 @@ Built with plain HTML and CSS. There are no frameworks, build tools or JavaScrip
 ├── projects/
 ├── styles/
 │   └── global.css       # Single stylesheet shared by every page
-├── assets/
-│   ├── docs/            # Certificate PDFs linked from the experience page
-│   └── images/projects/ # Project screenshots and the no-preview placeholder
-└── public/              # Favicons
+└── assets/
+    ├── docs/            # Certificate PDFs linked from the experience page
+    ├── icons/           # Favicons
+    └── images/projects/ # Project screenshots and the no-preview placeholder
 ```
 
 Colours are defined as CSS variables at the top of `styles/global.css`, so changing one there updates it across the whole site.
