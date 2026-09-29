@@ -2,6 +2,8 @@
 
 My personal portfolio website.
 
+**Live site:** https://greenbelt88.github.io/portfolio/
+
 Built with plain HTML and CSS. There are no frameworks, build tools or JavaScript.
 
 ## Pages
@@ -32,7 +34,7 @@ Colours are defined as CSS variables at the top of `styles/global.css`, so chang
 
 ## Running locally
 
-Open `index.html` in a browser. To serve it over HTTP instead, run a static server from the repository root, for example:
+Links point to folders (e.g. `projects/`) rather than `index.html`, so opening the files directly in a browser won't navigate correctly. Run a static server from the repository root instead, for example:
 
 ```
 npx serve .
