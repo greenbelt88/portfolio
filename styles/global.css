@@ -9,8 +9,7 @@
     --green-light: #6cc644;
 }
 
-/* Prevents content-box from being default */
-*, *::before, *::after {
+* {
     box-sizing: border-box;
 }
 
@@ -280,6 +279,67 @@ header nav ul a.active {
     padding: 4px 12px;
 }
 
+/* Projects page */
+/* Two equal-width columns; cards in the same row share the tallest card's height */
+.project-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+}
+
+.project-card {
+    display: flex;
+    flex-direction: column;
+    padding: 0;
+    overflow: hidden;
+}
+
+.project-card img {
+    display: block;
+    width: 100%;
+    height: 210px;
+    object-fit: cover;
+    object-position: top;
+    border-bottom: 1px solid var(--border);
+}
+
+/* Logo panel shown in place of a screenshot */
+.project-visual {
+    height: 210px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: var(--background);
+    border-bottom: 1px solid var(--border);
+    color: var(--text-muted);
+}
+
+.project-visual svg {
+    width: 88px;
+    height: 88px;
+}
+
+.project-info {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    padding: 20px 24px 24px;
+}
+
+/* Keeps buttons lined up at the bottom of cards with different text lengths */
+.project-info .button {
+    margin-top: auto;
+    align-self: flex-start;
+}
+
+.project-info p {
+    margin-bottom: 16px;
+}
+
+.project-info .tags {
+    margin-bottom: 20px;
+}
+
 /* Training and certificates */
 .cert-stack {
     display: flex;
@@ -364,4 +424,55 @@ footer p {
 
 .footer-links a:hover {
     color: var(--green-light);
+}
+
+/* Smaller screens */
+@media (max-width: 600px) {
+    header nav {
+        flex-direction: column;
+        gap: 12px;
+        padding: 0 20px;
+    }
+
+    header nav ul {
+        gap: 20px;
+    }
+
+    main {
+        padding: 0 20px 40px;
+    }
+
+    .hero {
+        padding: 50px 0 30px;
+    }
+
+    .hero h1 {
+        font-size: 2.2rem;
+    }
+
+    .page-intro {
+        padding: 40px 0 0;
+    }
+
+    .page-intro h1 {
+        font-size: 1.9rem;
+    }
+
+    .project-grid {
+        grid-template-columns: 1fr;
+    }
+
+    h2 {
+        margin-top: 40px;
+    }
+
+    footer .footer-inner {
+        padding: 16px 20px;
+        grid-template-columns: 1fr;
+        justify-items: center;
+    }
+
+    .footer-links {
+        justify-self: center;
+    }
 }
