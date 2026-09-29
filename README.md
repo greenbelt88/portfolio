@@ -1,17 +1,17 @@
 # Portfolio
 
-Personal portfolio website of Kieran McKend (greenbelt88), a computer science student at UCT working towards a career in cybersecurity and machine learning.
+My personal portfolio website.
 
 Built with plain HTML and CSS. There are no frameworks, build tools or JavaScript.
 
 ## Pages
 
-| Page | Path | Contents |
-| --- | --- | --- |
-| Home | `index.html` | Introduction, the tools I work with, and links to the rest of the site |
-| About | `about/index.html` | Background and interests |
-| Experience | `experience/index.html` | Skills, training and certificates, work experience |
-| Projects | `projects/index.html` | Projects with their tech stack and source code links |
+| Page       | Path                      | Contents                                                               |
+| ---------- | ------------------------- | ---------------------------------------------------------------------- |
+| Home       | `index.html`            | Introduction, the tools I work with, and links to the rest of the site |
+| About      | `about/index.html`      | Background and interests                                               |
+| Experience | `experience/index.html` | Skills, training and certificates, work experience                     |
+| Projects   | `projects/index.html`   | Projects with their tech stack and source code links                   |
 
 ## Project structure
 
